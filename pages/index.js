@@ -1,5 +1,15 @@
 import Link from 'next/link'
 import Head from 'next/head'
+import Image from 'next/image'
+
+const ProfileComponent = () => (
+  <Image
+    src="/images/profile.png"
+    height={144}
+    width={144}
+    alt="profile"
+  />
+)
 
 export default function Home() {
   return (
@@ -52,7 +62,7 @@ export default function Home() {
         </div>
       </main>
 
-      <img src="/images/profile.png" alt="profile" />
+      <ProfileComponent />
 
       <footer>
         <a
