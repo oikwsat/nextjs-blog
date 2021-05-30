@@ -35,6 +35,16 @@ export default function Home({ allPostsData }: { allPostsData: { date: string; t
           ))}
         </ul>
       </section>
+      <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
+        <h2 className={utilStyles.headingLg}>API</h2>
+        <ul className={utilStyles.list}>
+          <li className={utilStyles.listItem}>
+            <Link href="/api/hello">
+              <a>hello</a>
+            </Link>
+          </li>
+        </ul>
+      </section>
     </Layout>
   )
 }
